@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SIVIS - Catálogo de Sistemas</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+  <header>
+    <h1 class="header-title">Catálogo de Sistemas</h1>
+    <button id="logoutBtn" class="logout-btn">Sair</button>
+  </header>
+
+  <main id="sistemas-container" class="container">
+    <!-- cards serão inseridos aqui -->
+  </main>
+
+  <footer>© 2025 SEDU - Sistema Integrado de Visibilidade e Informações de Sistemas</footer>
+
+  <!-- Modal -->
+  <div id="modal" class="hidden" aria-hidden="true">
+    <div class="modal-card">
+      <h2 id="modal-title"></h2>
+      <pre id="modal-body" class="modal-body"></pre>
+      <button id="modal-close" class="btn-close">Fechar</button>
+    </div>
+  </div>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

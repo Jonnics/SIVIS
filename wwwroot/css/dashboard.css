@@ -1,0 +1,136 @@
+/* Reset / base */
+* { box-sizing: border-box; }
+html,body {
+  height:100%;
+  margin:0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background:#f2f5f9;
+  color:#222;
+  display:flex;
+  flex-direction:column;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #3E7CC5; /* cor pedida */
+  color: #fff;
+  padding: 10px 18px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+.header-title { margin:0; font-size:1rem; font-weight:600; }
+
+/* Botão Sair */
+.logout-btn {
+  background: #E53935;
+  color: white;
+  border: none;
+  padding:6px 12px;
+  border-radius:6px;
+  cursor:pointer;
+  font-weight:600;
+  font-size:0.9rem;
+}
+.logout-btn:hover { background:#C62828; }
+
+/* Grid dos cards */
+.container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  flex:1;
+}
+
+/* Card */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.card:hover { transform: translateY(-4px); box-shadow: 0 8px 18px rgba(0,0,0,0.12); }
+
+.card-title { margin:0 0 6px 0; color:#3E7CC5; font-size:1.05rem; font-weight:700; }
+.card-desc { margin:0 0 8px 0; color:#333; font-size:0.95rem; line-height:1.35; }
+.card-owner { margin:0; color:#555; font-size:0.88rem; font-weight:600; }
+
+/* ações (link + olho) */
+.card-actions {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:8px;
+  margin-top:12px;
+}
+.card a.access-btn {
+  background:#3E7CC5;
+  color:#fff;
+  padding:8px 12px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:600;
+  font-size:0.9rem;
+}
+.card a.access-btn:hover { background:#335f9a; }
+
+/* botão olho – área clicável e SVG */
+.eye-btn {
+  background: none;
+  border: none;
+  padding: 6px;
+  display: inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:6px;
+  cursor: pointer;
+  color: #3E7CC5; /* define a cor do SVG via currentColor */
+  transition: transform .12s ease, color .12s ease, background .12s ease;
+}
+.eye-btn:hover {
+  color: #1E5EA8;
+  transform: scale(1.08);
+  background: rgba(62,124,197,0.06);
+}
+
+/* SVG styling: stroke via currentColor */
+.eye-btn svg {
+  width:18px; height:18px; display:block;
+  stroke: currentColor; fill:none; stroke-width:1.6;
+  stroke-linecap:round; stroke-linejoin:round;
+}
+
+/* Modal */
+#modal.hidden { display:none; }
+#modal {
+  position:fixed; inset:0; display:flex; align-items:center; justify-content:center;
+  background: rgba(0,0,0,0.45);
+}
+.modal-card {
+  background:#fff; padding:18px; border-radius:10px; width:420px; max-width:92%;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+}
+.modal-card h2 { margin:0 0 8px 0; color:#3E7CC5; }
+.modal-body { white-space:pre-wrap; color:#333; margin:0 0 12px 0; }
+
+/* fechar botão do modal */
+.btn-close {
+  background:#3E7CC5; color:#fff; border:none; padding:8px 12px; border-radius:8px; cursor:pointer;
+}
+.btn-close:hover { background:#335f9a; }
+
+/* Footer */
+footer {
+  padding:12px 16px;
+  text-align:center;
+  background:transparent;
+  color:#666;
+  font-size:0.9rem;
+}
