@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SIVIS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4c11873f339e347749c7774a6d90e22653674d78")]
 [assembly: System.Reflection.AssemblyProductAttribute("SIVIS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SIVIS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
